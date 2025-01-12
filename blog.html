@@ -1,0 +1,93 @@
+<!-- teplates/blog.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Moonlanding Technologies - Web Development and Mobile App Solutions">
+        <title>Moonlanding Technologies</title>
+        <link rel="stylesheet" href="../static/CSS/blog.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- Header -->
+    <header class="header">
+        <nav aria-label="Main navigation">
+            <div class="logo">
+                <img src="../static/images/logo.jpg" alt="Moonlanding Technologies Logo" width="150" height="50">
+            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+                <span class="sr-only">Menu</span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h3>Fill the details of your proposed blog today and we will get back to you within 3 hours</h3>
+                    <form action="/submit-form" method="post">
+                        <div class="form-group">
+                            <label for="name">Proposed blog Name:</label>
+                            <input type="text" id="name" name="name" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Phone Number:</label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Briefly describe your blog:</label>
+                            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Submit Form</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-details">
+                    <h4>Contact Information</h4>
+                    <p>Email: <a href="mailto:moonlandingsolutions@gmail.com">moonlandingsolutions@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+254103140440">(+254) 103 - 140 - 440</a></p>
+                </div>
+                <div class="social-media" aria-label="Social Media Links">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Visit our Facebook page">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Visit our Twitter page">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Visit our Instagram page">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Moonlanding Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
